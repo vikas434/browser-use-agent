@@ -40,4 +40,4 @@ python simple_agent.py
 - Browser automation using Browser Use framework
 - Support for both OpenAI and Google Gemini models
 - Real Chrome browser integration
-- Automated web navigation 
+- Automated web navigation
