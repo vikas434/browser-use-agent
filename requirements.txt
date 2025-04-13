@@ -1,6 +1,9 @@
-browser-use>=0.1.40
+openai>=1.12.0
+python-dotenv>=1.0.0
 langchain>=0.1.12
 langchain-openai>=0.0.8
-langchain-google-genai>=0.0.6
-python-dotenv>=1.0.0
+duckduckgo-search>=4.4
+browser-use>=0.1.40
+PyPDF2>=3.0.0
 pydantic>=2.0.0
+langchain_google_genai
