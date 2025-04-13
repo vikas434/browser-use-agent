@@ -5,7 +5,7 @@ import dotenv
 import os
 import json
 from datetime import datetime
-]
+
 
 # Create fixed JWT implementation plan - no browser needed for this part
 jwt_implementation_plan = {
