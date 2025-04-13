@@ -95,6 +95,16 @@ def read_cv():
 	'Upload cv to element - call this function to upload if element is not found, try with different index of the same upload element',
 )
 async def upload_cv(index: int, browser: BrowserContext):
+	"""Uploads a CV file to a specified index element in a browser context.
+	Parameters:
+	- index (int): Index of the element where the CV should be uploaded.
+	- browser (BrowserContext): The browser context used to locate elements.
+	Returns:
+	- ActionResult: Contains a success message if upload succeeds, or an error message if it fails.
+	Processing Logic:
+	- Retrieves the DOM element based on the given index and checks if it is a file upload element.
+	- Handles cases where the element cannot be found or is not suitable for file uploads.
+	- Attempts to upload a CV file to the located element and logs the process."""
 	path = str(CV.absolute())
 	dom_el = await browser.get_dom_element_by_index(index)
 
@@ -140,6 +150,16 @@ async def main():
 	# 	'You can navigate through pages e.g. by scrolling '
 	# 	'Make sure to be on the english version of the page'
 	# )
+	"""Async function to automate job search tasks using an AI language model for specific companies.
+	Parameters:
+	- None.
+	Returns:
+	- None.
+	Processing Logic:
+	- Constructs task strings for searching machine learning internships at specified companies.
+	- Initializes a list of job-finding tasks for each target company.
+	- Utilizes the OpenAI API for language model interaction to process tasks.
+	- Deploys agents to execute tasks concurrently using asyncio."""
 	ground_task = (
 		'You are a professional job finder. '
 		'1. Read my cv with read_cv'
